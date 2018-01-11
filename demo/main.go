@@ -16,7 +16,7 @@ func HelloWorld(w http.ResponseWriter, r *http.Request) {
 
 func GetHelloPHP(w http.ResponseWriter, r *http.Request) {
   // 機器內互打需使用 EXPOSE port
-  resp, err := http.Get("http://nginx:80/helloworld.php")
+  resp, err := http.Get("http://nginx-service:80/helloworld.php")
 
   if err != nil {
     // handle error
