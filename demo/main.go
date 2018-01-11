@@ -40,7 +40,7 @@ func SayHello(w http.ResponseWriter, r *http.Request) {
 }
 
 func init() {
-  http.HandleFunc("/get-hello-PHP", GetHelloPHP)
+  http.HandleFunc("/getHelloPHP", GetHelloPHP)
 
   http.HandleFunc("/say-hello", SayHello)
 
