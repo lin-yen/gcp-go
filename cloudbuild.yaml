@@ -5,7 +5,7 @@ steps:
 - name: 'gcr.io/cloud-builders/kubectl'
   args: ['set', 'image', "deployment/go", "go=gcr.io/$PROJECT_ID/go:$SHORT_SHA"]
   env:
-  - 'CLOUDSDK_COMPUTE_ZONE=asia-east1-a'
+  - 'CLOUDSDK_COMPUTE_ZONE=asia-east1-c'
   - 'CLOUDSDK_CONTAINER_CLUSTER=cluster-test'
   wait_for: ['build']
 images:
