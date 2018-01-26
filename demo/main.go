@@ -36,7 +36,7 @@ func GetHelloPHP(w http.ResponseWriter, r *http.Request) {
 }
 
 func SayHello(w http.ResponseWriter, r *http.Request) {
-  fmt.Fprintf(w, "Hello world! by gowwww.")
+  fmt.Fprintf(w, "Hello world! by go.")
 }
 
 func init() {
